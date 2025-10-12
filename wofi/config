@@ -1,0 +1,9 @@
+
+[wofi]
+# Style
+theme = /home/omar/.config/wofi/style.css
+
+# Behaviour
+show-icons = true
+show-categories = true
+drun-show-actions = false
