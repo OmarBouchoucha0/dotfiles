@@ -120,20 +120,45 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        -- 🧠 Core and scripting
         "bash",
-        "html",
-        "javascript",
-        "json",
         "lua",
+        "vim",
+        "vimdoc",
+        "regex",
+        "query",
+        -- 🌐 Web / Frontend
+        "html",
+        "css",
+        "scss",
+        "javascript",
+        "typescript",
+        "tsx",
+        "json",
+        "xml",
+        -- 🐘 Symfony / PHP stack
+        "php",
+        "phpdoc",
+        "twig",
+        "yaml",
+        "ini",
+        "sql",
+        -- 🐍 Other backends
+        "python",
+        "java",
+        "c",
+        "cpp",
+        "rust",
+        "go",
+        -- ⚙️ Data & config formats
+        "toml",
+        "dockerfile",
+        "gitignore",
+        "graphql",
+        -- 🧾 Documentation & markup
         "markdown",
         "markdown_inline",
-        "python",
-        "query",
-        "regex",
-        "tsx",
-        "typescript",
-        "vim",
-        "yaml",
+        "latex",
       },
     },
   },
@@ -186,11 +211,41 @@ return {
   {
     "williamboman/mason.nvim",
     opts = {
+
       ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
+        -- 🧹 Formatters / Linters
+        "stylua", -- Lua formatter
+        "shfmt", -- Shell formatter
+        "shellcheck", -- Shell linter
+        "flake8", -- Python linter
+        "black", -- Python formatter
+        "isort", -- Python import sorter
+        "prettier", -- JS/TS/HTML/CSS/Markdown formatter
+        "eslint", -- JS/TS linter
+        "phpcs", -- PHP code sniffer
+        "phpcbf", -- PHP code beautifier
+        "phpstan", -- PHP static analyzer
+        "twigcs", -- Twig linter
+        "markdownlint", -- Markdown linter
+        "hadolint", -- Dockerfile linter
+        "sqlfluff", -- SQL linter/formatter
+
+        -- 🌐 LSP servers
+        "intelephense", -- PHP LSP server
+        "phpactor", -- PHP refactoring / helper
+        "pyright", -- Python LSP
+        "tsserver", -- JS/TS LSP
+        "html", -- HTML LSP
+        "cssls", -- CSS LSP
+
+        -- 🐘 C / C++ / Go
+        "clangd", -- C/C++ LSP server
+        "gofumpt", -- Go formatter
+        "golangci-lint", -- Go linter
+        "gopls", -- Go LSP server
+
+        -- ⚙️ Other
+        "bash-language-server", -- Bash LSP
       },
     },
   },
