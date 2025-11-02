@@ -9,42 +9,19 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  {
-    "folke/tokyonight.nvim",
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-    },
-    enabled = false,
-  },
-
-
 {
-  "projekt0n/github-nvim-theme",
+  "sainnhe/gruvbox-material",
   lazy = false,
   priority = 1000,
-  opts = {
-    options = {
-      transparent = true,
-    },
-    styles = {
-      sidebars = "transparent",
-      floats = "transparent",
-    },
-  },
-  config = function(_, opts)
-    require("github-theme").setup(opts)
-    vim.cmd("colorscheme github_dark_dimmed")
+  config = function()
+    vim.g.gruvbox_material_transparent_background = 1
+    vim.g.gruvbox_material_enable_bold = 1
+    vim.g.gruvbox_material_enable_italic = 1
+    vim.cmd("colorscheme gruvbox-material")
   end,
 },
 {
   "LazyVim/LazyVim",
-  opts = {
-    colorscheme = "github_dark_dimmed",
-  },
 },
  {
     "folke/trouble.nvim",
