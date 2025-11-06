@@ -2,12 +2,15 @@
 * {
   font-family: JetBrainsMono, monospace;
   font-size: 12px;
-  color: #ffffff; /* text in white */
+  color: #ffffff;
+  /* text in white */
 }
 
 window#waybar {
-  background-color: rgba(0, 0, 0, 0.2); /* semi-transparent black */
-  padding: 2px 8px;                     /* smaller padding to shrink the bar */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* semi-transparent black */
+  padding: 2px 8px;
+  /* smaller padding to shrink the bar */
 }
 
 /* Left modules (workspaces / window) */
@@ -16,19 +19,24 @@ window#waybar {
   margin-right: 2px;
   padding: 0 2px;
   border-radius: 2px;
-  background: #1a1a1a; /* dark gray for inactive */
-  color: #ffffff;       /* text in white */
-  border: 1px solid transparent; /* default no border */
+  background: #1a1a1a;
+  /* dark gray for inactive */
+  color: #ffffff;
+  /* text in white */
+  border: 1px solid transparent;
+  /* default no border */
 }
 
 #workspaces button.active {
-  border: 1px solid #ffffff; /* white border for active workspace */
+  border: 1px solid #ffffff;
+  /* white border for active workspace */
 }
 
 /* Center module (clock) */
 #clock {
   margin: 0px;
-  padding: 0 4px; /* slightly smaller padding */
+  padding: 0 4px;
+  /* slightly smaller padding */
   color: #ffffff;
 }
 
@@ -37,9 +45,8 @@ window#waybar {
 #pulseaudio,
 #battery,
 #tray {
-  margin-left: 2px;   
+  margin-left: 2px;
   margin-right: 2px;
   padding: 0 2px;
   color: #ffffff;
 }
-
