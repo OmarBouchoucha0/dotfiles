@@ -26,4 +26,3 @@ zen &
 sleep 0.8
 
 exit 0
-

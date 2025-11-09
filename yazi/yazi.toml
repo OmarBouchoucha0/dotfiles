@@ -2,7 +2,6 @@
 [mgr]
 show_hidden = true
 
-
 [opener]
 edit = [{ run = 'nvim "$@"', desc = "Edit with Neovim", block = true }]
 
@@ -11,4 +10,10 @@ rules = [
   { mime = "text/*", use = "edit" },
   { mime = "application/json", use = "edit" },
   { name = "*", use = "edit" },
+]
+
+[preview]
+rules = [
+  { mime = "text/*", run = "~/.config/yazi/plugins/bat-preview.sh {file}" },
+  { mime = "application/json", run = "~/.config/yazi/plugins/bat-preview.sh {file}" },
 ]
