@@ -47,3 +47,10 @@
 # # which is explained in the docs for that config option.
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
+theme = Github Dark High Contrast
+font_family = "JetBrainsMono Nerd Font"
+font_size = 12.0
+background_opacity = 1.0
+padding_h = 5
+padding_v = 5
+max_scrollback_size = 10000
